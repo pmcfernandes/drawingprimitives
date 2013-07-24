@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FF6F2120-675F-4E2C-947E-6F9F43393E4C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Uatlantica.Drawing</RootNamespace>
+    <AssemblyName>Uatlantica.Drawing</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.0.5022.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\Open XML SDK\V2.0\lib\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BlockAggregator.cs" />
+    <Compile Include="BlockCreator.cs" />
+    <Compile Include="DocumentHelper.cs" />
+    <Compile Include="MediaHACreator.cs" />
+    <Compile Include="ImageHelper.cs" />
+    <Compile Include="InvertedTrianguleCreator.cs" />
+    <Compile Include="Math.cs" />
+    <Compile Include="MediaAACreator.cs" />
+    <Compile Include="ModaCreator.cs" />
+    <Compile Include="NACreator.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticalChart.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BaseEscala.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Celula_0-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Celula_20-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Celula_40-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Celula_60-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Celula_80-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Celula_Vazia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IndicadorAA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IndicadorHA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InvertedTriangule.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
