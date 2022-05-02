@@ -25,4 +25,6 @@ for (int i = 0; i < 20; i++)
 
 ### Sample
 
-!(sample)[https://i.ibb.co/6yGNgQd/1.png]
+    ![sample](https://i.ibb.co/6yGNgQd/1.png)
+
+
