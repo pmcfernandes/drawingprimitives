@@ -25,6 +25,5 @@ for (int i = 0; i < 20; i++)
 
 ### Sample
 
-!(sample)[https://i.ibb.co/6yGNgQd/1.png]
-
+![system schema](https://i.ibb.co/6yGNgQd/1.png)
 
